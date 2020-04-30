@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html class="no-js"> 
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Currency Converter</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/ad9207ddf0.js" crossorigin="anonymous"></script>
+        
+    </head>
+    <body>
+        <div class = "container">
+            <div class = "main-title my-4">
+                <h1 class = "text-center">
+                    <i class="fas fa-globe"></i>
+                    Currency Converter
+                    <i class="fas fa-heart"></i>
+                </h1>
+            </div>
+            <div class = "form-div">
+                <form id="currency-converter">
+                    <div class = "form-group">
+                        <input type="text" placeholder="Enter the Currency... " class="form-control" id="currency-input" >
+
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="currency-option" id="kwToGbp" checked>
+                        <img src="https://www.countryflags.io/kr/flat/32.png">
+                        <img src="https://www.countryflags.io/gb/flat/32.png">
+                        <label for="kwToGbp" class="form-check-label">
+                            Korean Won to Pound Sterling
+                        </label>
+                        <i class="fas fa-won-sign"></i>
+                        <i class="fas fa-arrow-right"></i>
+                        <i class="fas fa-pound-sign"></i>
+                        
+                        
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="currency-option" id="kwToUsd">
+                        <img src="https://www.countryflags.io/kr/flat/32.png">
+                        <img src="https://www.countryflags.io/us/flat/32.png">
+                        <label for="kwToGbp" class="form-check-label">
+                            Korean Won to US Dollar
+                        </label>
+                        <i class="fas fa-won-sign"></i>
+                        <i class="fas fa-arrow-right"></i>
+                        <i class="fas fa-dollar-sign"></i>
+                        
+                        
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="currency-option" id="kwToEuro">
+                        <img src="https://www.countryflags.io/kr/flat/32.png">
+                        <img src="https://www.countryflags.io/Eu/flat/32.png">
+                        <label for="kwToGbp" class="form-check-label">
+                            Korean Won to Euro
+                        </label>
+                        <i class="fas fa-won-sign"></i>
+                        <i class="fas fa-arrow-right"></i>
+                        <i class="fas fa-euro-sign"></i>
+                        
+                        
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="currency-option" id="kwToCny">
+                        <img src="https://www.countryflags.io/kr/flat/32.png">
+                        <img src="https://www.countryflags.io/cn/flat/32.png">
+                        <label for="kwToGbp" class="form-check-label">
+                            Korean Won to Chinese Yuan
+                        </label>
+                        <i class="fas fa-won-sign"></i>
+                        <i class="fas fa-arrow-right"></i>
+                        <i class="fas fa-yen-sign"></i>
+                        
+                        
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="currency-option" id="kwToSgd">
+                        <img src="https://www.countryflags.io/kr/flat/32.png">
+                        <img src="https://www.countryflags.io/sg/flat/32.png">
+                        <label for="kwToGbp" class="form-check-label">
+                            Korean Won to Singapore Dollar
+                        </label>
+                        <i class="fas fa-won-sign"></i>
+                        <i class="fas fa-arrow-right"></i>
+                        <i class="fas fa-dollar-sign"></i>
+                        
+                        
+                    </div>
+                    <div class="form-group text-center">
+                        <button type="submit" class="btn pink">Convert</button>
+                    </div>
+                </form>
+            </div>
+            <div class="result-div text-center d-none">
+                <h3>
+                    Result: <span id="currency-result"></span>
+                </h3>
+            </div>
+            
+        </div>
+        
+        <script src="script.js" async defer></script>
+    </body>
+</html>
